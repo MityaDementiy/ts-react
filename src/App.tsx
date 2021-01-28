@@ -1,13 +1,15 @@
 import React from 'react';
-import './App.css';
+
+import { Navbar } from './components/Navbar';
 
 const App: React.FC = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <h1>Hello, React + TypeScript</h1>
-      </header>
-    </div>
+    <>
+      <Navbar />
+      <div className="container">
+        <h1>Hello, Typescript + React</h1>
+      </div>
+    </>
   );
 }
 
