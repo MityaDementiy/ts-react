@@ -10,6 +10,9 @@ type TodoListProps = {
 };
 
 export const TodoList: React.FC<TodoListProps> = ({ todos, onRemove, onToggle }) => {
+    if (todos.length === 0) {
+        return <div>Запланированных дел нет</div>
+    }
     return (
         <ul>
             {todos.map((todo) => {
